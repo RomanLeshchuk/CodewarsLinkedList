@@ -4,6 +4,7 @@ class Node():
         self.next = next
 
 def stringify(node):
-    print(node.data)
-    if node.data is not None:
-        stringify(node.next)
+    if node is None:
+        return "None"
+    else:
+        return f"{node.data} -> " + stringify(node.next)
