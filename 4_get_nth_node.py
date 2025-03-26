@@ -19,4 +19,4 @@ def get_nth(node, index):
 
         index -= 1
 
-    return node.data
+    return node
