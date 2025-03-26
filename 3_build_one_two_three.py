@@ -7,13 +7,10 @@ def push(head, data):
     if head is None:
         return Node(data)
 
-    curr = head
-    while curr.next != None:
-        curr = curr.next
+    inserted = Node(data)
+    inserted.next = head
 
-    curr.next = Node(data)
-
-    return head
+    return inserted
 
 def build_one_two_three():
-    return push(push(push(None, 1), 2), 3)
+    return push(push(push(None, 3), 2), 1)
