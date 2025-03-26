@@ -8,8 +8,8 @@ def linked_list_from_string(s):
     res = Node(int(arr_data[0]))
     curr = res
 
-    for i in range(1, len(arr_data)):
-        curr.next = arr_data[i]
+    for i in range(1, len(arr_data) - 1):
+        curr.next = Node(int(arr_data[i]))
         curr = curr.next
 
     return res
