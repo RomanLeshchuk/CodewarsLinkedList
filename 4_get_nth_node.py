@@ -6,16 +6,16 @@ class Node(object):
 
 def get_nth(node, index):
     if index < 0:
-        raise RuntimeError("Invalid index value should throw error.")
+        raise RuntimeError("Invalid index value")
 
     if node is None:
-        raise RuntimeError("None linked list should throw error.")
+        raise RuntimeError("None linked list")
 
     while index:
         node = node.next
 
         if node is None:
-            raise RuntimeError("Invalid index value should throw error.")
+            raise RuntimeError("Invalid index value")
 
         index -= 1
 
