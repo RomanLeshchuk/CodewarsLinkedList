@@ -4,6 +4,9 @@ class Node():
         self.next = next
 
 def linked_list_from_string(s):
+    if s == "None":
+        return None
+
     arr_data = s.split(" -> ")
     res = Node(int(arr_data[0]))
     curr = res
