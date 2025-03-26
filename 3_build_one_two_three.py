@@ -4,13 +4,16 @@ class Node:
         self.next = None
 
 def push(head, data):
+    if head is None:
+        return Node(data)
+
     curr = head
     while curr.next != None:
         curr = curr.next
+
     curr.next = Node(data)
 
-def build_one_two_three():
-    head = Node(1)
-    push(head, 2)
-    push(head, 3)
     return head
+
+def build_one_two_three():
+    return push(push(push(None, 1), 2), 3)
