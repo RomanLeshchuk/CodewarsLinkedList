@@ -1,3 +1,4 @@
+# do not copy Node to run on Codewars
 class Node():
     def __init__(self, data, next = None):
         self.data = data
