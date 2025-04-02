@@ -12,7 +12,7 @@ def alternating_split(head):
     def recursion_split(head):
         if head is None or head.next is None:
             res = Context(head, None)
-            if head.next is not None:
+            if head is not None:
                 res.second = head.next
                 head.next = None
             return res
