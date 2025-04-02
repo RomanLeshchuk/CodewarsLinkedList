@@ -17,6 +17,7 @@ def sorted_insert(head, data):
             new_node.next = curr_node.next
             curr_node.next = new_node
             break
+        curr_node = curr_node.next
     else:
         curr_node.next = Node(data)
 
